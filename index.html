@@ -1,145 +1,487 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ9ZFYJ4GJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XQ9ZFYJ4GJ');
-</script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Sachin Gupta, Digital Transformation Architect with 20+ years of global experience in enterprise digital operating models, ERP modernization, AI/ML for enterprise operations, enterprise architecture and supply-chain resilience.">
-<meta name="keywords" content="Sachin Gupta, Digital Transformation Architect, Enterprise Architecture, ERP Modernization, AI ML Enterprise Operations, Supply Chain Resilience, Enterprise AI, Digital Transformation">
-<meta name="author" content="Sachin Gupta">
-<link rel="canonical" href="https://sachingupta.net/">
-<meta property="og:title" content="Sachin Gupta | Digital Transformation Architect">
-<meta property="og:description" content="Enterprise digital transformation, AI/ML for operations, architecture and supply-chain resilience.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sachingupta.net/">
-<meta property="og:image" content="https://sachingupta.net/assets/sachin-gupta.jpg">
-<link rel="icon" type="image/jpeg" href="assets/sachin-gupta-icon.jpg">
-<title>Sachin Gupta | Digital Transformation & Enterprise AI</title>
-<meta name="theme-color" content="#07111f" id="theme-color">
-<link rel="stylesheet" href="styles.css">
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Sachin Gupta",
-  "url":"https://sachingupta.net/",
-  "image":"https://sachingupta.net/assets/sachin-gupta.jpg",
-  "jobTitle":"Digital Transformation Architect",
-  "sameAs":[
-    "https://www.linkedin.com/in/sachinguptaerp/",
-    "https://orcid.org/0009-0007-2359-5464"
-  ],
-  "knowsAbout":[
-    "Digital Transformation",
-    "Enterprise Architecture",
-    "ERP Modernization",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Enterprise AI",
-    "Supply Chain Resilience"
-  ]
-}
-</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Sachin Gupta: enterprise AI and digital operating model transformation for mission-critical global supply chain resilience. Scholar, speaker, technical reviewer, and advisor." name="description"/>
+<link href="assets/portrait.png" rel="icon" type="image/png"/>
+<link href="assets/portrait.png" rel="apple-touch-icon"/>
+<title>Sachin Gupta | Enterprise AI · Digital Operating Models · Scholar &amp; Speaker</title>
 <style>
-.executive-summary{margin:1.25rem 0;padding:1rem 1.15rem;border:1px solid var(--line);border-radius:16px;background:var(--card)}
-.executive-summary small{display:block;font-weight:700;letter-spacing:.08em;margin-bottom:.45rem}
-.executive-summary p{margin:0}
-.recognition-lower{margin-top:2rem}
+:root{
+  --bg:#091523; --bg2:#0e1f33; --card:#ffffff; --soft:#eef4fb; --soft2:#f7f9fc;
+  --text:#142132; --muted:#5f6f84; --line:#dbe4ef; --brand:#0f5fd7; --brand2:#6d4eff;
+  --accent:#00a99d; --gold:#b88916; --white:#ffffff; --shadow:0 16px 40px rgba(7,17,31,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#f4f8fc 0%,#fbfdff 100%);color:var(--text);line-height:1.6}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,calc(100% - 2rem));margin:0 auto}
+header{position:sticky;top:0;z-index:20;background:rgba(9,21,35,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+.brand{display:flex;align-items:center;gap:.85rem;color:#fff;text-decoration:none;font-weight:700}
+.brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.25)}
+.links{display:flex;gap:1rem;flex-wrap:wrap}
+.links a{color:#d7e7ff;font-size:.94rem;text-decoration:none}
+.links a:hover{color:#fff}
+.hero{background:radial-gradient(circle at top right,rgba(109,78,255,.20),transparent 30%),linear-gradient(135deg,var(--bg) 0%,var(--bg2) 100%);padding:4.5rem 0 3rem;color:#fff}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:2rem;align-items:center}
+.eyebrow{display:inline-flex;gap:.55rem;align-items:center;background:rgba(255,255,255,.1);padding:.45rem .75rem;border-radius:999px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.05;margin:.9rem 0 1rem}
+.hero .lead{font-size:1.1rem;max-width:68ch;color:#d8e4f6}
+.hero-card{background:linear-gradient(180deg,rgba(255,255,255,.15),rgba(255,255,255,.06));padding:1rem;border:1px solid rgba(255,255,255,.16);border-radius:28px;box-shadow:var(--shadow)}
+.hero-card img{border-radius:22px;aspect-ratio:4/5;object-fit:cover}
+.hero-kickers{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.25rem}
+.hero-kickers div{padding:1rem;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.06)}
+.hero-kickers strong{display:block;font-size:1.2rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.35rem}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.85rem 1.1rem;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid rgba(255,255,255,.15);color:#fff;background:rgba(255,255,255,.08)}
+.btn.primary{background:#fff;color:#0a1830}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.section{padding:4rem 0}
+.section.alt{background:var(--soft2)}
+.section h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;margin:.5rem 0 1rem}
+.section .intro{color:var(--muted);max-width:78ch}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.grid-3,.grid-4{display:grid;gap:1.2rem}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:1.25rem;box-shadow:var(--shadow)}
+.card h3{margin:.2rem 0 .55rem;font-size:1.15rem;line-height:1.25}
+.muted{color:var(--muted)}
+.tag{display:inline-block;padding:.35rem .65rem;border-radius:999px;background:#edf4ff;border:1px solid #d2e3ff;color:#244f9b;font-size:.82rem;font-weight:700;margin:.2rem .35rem .2rem 0}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.2rem}
+.metric{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1rem;text-align:center}
+.metric b{display:block;font-size:1.45rem;color:#0a3d91}
+.timeline{display:grid;gap:1rem;position:relative;margin-top:1rem}
+.timeline .event{display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:start;padding:1rem 0;border-top:1px solid var(--line)}
+.timeline .event:first-child{border-top:none}
+.date{font-weight:800;color:#4067a8}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.figure{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.figure button{all:unset;cursor:pointer;display:block;width:100%}
+.figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.figure .caption{padding:.9rem 1rem}
+.figure .caption b{display:block;margin-bottom:.25rem}
+.logo-line{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1rem}
+.logo-line .pill{padding:.55rem .8rem;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;color:#234}
+.callout{background:linear-gradient(135deg,#eef5ff,#ffffff);border:1px solid #d8e7ff;border-radius:22px;padding:1.1rem 1.25rem}
+.list{margin:0;padding-left:1.05rem}
+.list li{margin:.35rem 0}
+.kudos{display:grid;grid-template-columns:1.25fr .75fr;gap:1rem}
+.media-item{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;padding:.95rem 0;border-top:1px solid var(--line)}
+.media-item:first-child{border-top:none}
+.small{font-size:.92rem}
+footer{background:#0b1627;color:#d1ddf1;padding:1.6rem 0;margin-top:2rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.badge-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
+.badge{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1rem;display:flex;flex-direction:column;gap:.35rem}
+.badge strong{color:#0a3d91}
+.image-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.modal{position:fixed;inset:0;background:rgba(5,13,25,.78);display:none;align-items:center;justify-content:center;padding:1rem;z-index:99}
+.modal.open{display:flex}
+.modal-box{position:relative;max-width:min(1100px,95vw);max-height:92vh}
+.modal-box img{max-width:100%;max-height:90vh;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.modal-close{position:absolute;top:-14px;right:-14px;background:#fff;border:none;border-radius:999px;width:42px;height:42px;font-size:1.3rem;cursor:pointer;box-shadow:var(--shadow)}
+.notice{font-size:.94rem;color:#49607d}
+@media (max-width: 980px){
+  .hero-grid,.two-col,.kudos{grid-template-columns:1fr}
+  .grid-3,.grid-4,.gallery,.badge-strip,.metric-grid,.image-row{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 700px){
+  .links{display:none}
+  .hero{padding-top:3.5rem}
+  .grid-3,.grid-4,.gallery,.badge-strip,.metric-grid,.image-row{grid-template-columns:1fr}
+  .timeline .event{grid-template-columns:1fr}
+}
+
+/* Theme system: dark is always first-visit default. A user choice persists locally. */
+:root{color-scheme:dark;--bg:#07121f;--bg2:#10263a;--card:#14253a;--soft:#0e2032;--soft2:#0b1a2a;--text:#eaf2ff;--muted:#afc0d5;--line:#294057;--brand:#83b8ff;--brand2:#ae95ff;--white:#fff;--shadow:0 16px 42px rgba(0,0,0,.22)}
+html{scroll-padding-top:95px}
+body{background:linear-gradient(180deg,#07131f 0%,#0d1e30 70%,#091522 100%);color:var(--text);transition:background .35s,color .35s}
+body.light{color-scheme:light;--bg:#f5f8fc;--bg2:#eaf1fa;--card:#ffffff;--soft:#eaf3ff;--soft2:#f7f9fc;--text:#17253b;--muted:#52657c;--line:#d7e2ed;--brand:#0f5fd7;--brand2:#6d4eff;--shadow:0 16px 36px rgba(8,20,40,.09);background:#f8fbff}
+body.light .hero{background:radial-gradient(circle at top right,rgba(42,107,213,.1),transparent 34%),linear-gradient(135deg,#edf6ff,#e9e9ff);color:#11253b}
+body.light .hero .lead{color:#3d5269}
+body.light .hero .hero-kickers>div{background:rgba(255,255,255,.78);border-color:#d0dfed}
+body.light .hero .eyebrow{background:rgba(7,40,90,.08);color:#24456f}
+body.light .hero .btn.primary{background:#153d7e;color:#fff}
+body.light .hero .btn{color:#244c85;background:rgba(255,255,255,.6);border-color:#a8c0dd}
+body.light .hero .btn.primary{color:#fff;background:#153d7e}
+body.light .hero .hero-line{color:#1b4b84}
+body.light .metric,body.light .card,body.light .figure,body.light .pill,body.light .badge{background:#fff}
+body.light .section.alt{background:#edf3f9}
+body.light .callout{background:#eef5ff;border-color:#d3e5f9}
+body.light .badge strong,body.light .metric b{color:#154992}
+body.light .date{color:#295b9d}
+body.light .contact-cta{color:#0b53bd}
+.section.alt{background:var(--soft2)}
+.card,.metric,.badge,.figure{background:var(--card);border-color:var(--line)}
+.card p,.figure .muted,.metric span,.badge span{color:var(--muted)}
+.callout{background:var(--card);border-color:var(--line)}
+.tag{color:var(--brand);border-color:var(--line);background:var(--soft)}
+.metric b,.badge strong,.date{color:var(--brand)}
+a{color:var(--brand)}
+header{background:rgba(8,18,32,.92)}
+.hero{background:radial-gradient(circle at 85% 12%,rgba(109,78,255,.24),transparent 34%),linear-gradient(135deg,#081421,#102943);color:#fff;overflow:hidden}
+.hero em{font-style:normal;color:#91bfff}
+.hero .lead{color:#d6e2f5}
+.hero-line{margin:1.2rem 0 .15rem;font-weight:700;color:#8fe1d8;font-size:1.08rem}
+.hero-kickers{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hero-kickers strong{font-size:1.08rem}
+.hero-kickers div{min-width:0}
+.hero-card{position:relative;max-width:445px;margin-inline:auto}
+.hero-card img{aspect-ratio:4/4.6;object-position:center top}
+.hero-photo-caption{font-size:.82rem;text-align:center;padding:.65rem .3rem;color:#e6f0ff}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.theme-toggle,.mobile-menu{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;background:#1b3450;color:#eaf3ff;border:1px solid #456382;border-radius:999px;padding:.52rem .8rem;cursor:pointer;font-size:.85rem;font-weight:700}
+.mobile-menu{display:none;font-size:1.1rem}
+.card-no{display:inline-block;font-size:.85rem;color:var(--brand);font-weight:800;margin-bottom:.55rem}
+.grid-3>.card,.grid-4>.card{height:100%}
+.research-foot{display:flex;gap:1.3rem;flex-wrap:wrap;margin-top:1.3rem;font-weight:700}
+.subgrid{margin-top:1.25rem}
+.podcast-grid{display:grid;grid-template-columns:.65fr 1.35fr;align-items:center;gap:1.5rem;padding:1.2rem;background:var(--card);border:1px solid var(--line);border-radius:24px}
+.podcast-emblem{display:flex;flex-direction:column;gap:.3rem;align-items:center;justify-content:center;text-align:center;min-height:245px;border-radius:18px;background:linear-gradient(140deg,#1c3464,#3a2454);color:#fff;padding:1.5rem}
+.podcast-emblem strong{font-size:1.4rem}
+.podcast-mark{font-size:3.5rem}
+.video-feature{display:grid;grid-template-columns:1.1fr 1fr;gap:1.4rem;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:1.2rem;margin:1.45rem 0}
+.video-feature p{color:var(--muted)}
+.video-thumb{display:block;position:relative;overflow:hidden;border-radius:16px}
+.video-thumb img{height:100%;width:100%;object-fit:cover;max-height:250px}
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;background:rgba(18,39,74,.85);color:white;border:2px solid #fff;border-radius:50%;width:64px;height:64px}
+.time-links{display:flex;flex-wrap:wrap;gap:.55rem}
+.time-links a{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:.4rem .7rem;font-weight:750;font-size:.85rem}
+.contact-cta{font-weight:800}
+.btn.outline{background:var(--soft);color:var(--brand);border-color:var(--line)}
+.figure img{transition:transform .35s ease,filter .35s ease}
+.figure button:hover img{transform:scale(1.035)}
+.card{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.card:hover{transform:translateY(-4px);border-color:var(--brand)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.is-visible{opacity:1;transform:none}
+.float-card{animation:gentleFloat 7s ease-in-out infinite}
+@keyframes gentleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media(max-width:1150px){.links{gap:.55rem}.links a{font-size:.83rem}}
+@media(max-width:920px){.links{display:none;position:absolute;right:1rem;top:72px;flex-direction:column;gap:1rem;background:#10263a;padding:1rem;min-width:220px;border:1px solid #365173;border-radius:14px;box-shadow:var(--shadow)}.links.open{display:flex}.mobile-menu{display:inline-flex}.nav-right{margin-left:auto}.hero-grid{grid-template-columns:1fr 0.8fr}.video-feature,.podcast-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.hero-grid{grid-template-columns:1fr}.hero-kickers{grid-template-columns:1fr 1fr}.hero-card{width:min(100%,390px)}.nav{gap:.6rem}.theme-label{display:none}.theme-toggle{padding:.48rem .67rem}.section{padding:3rem 0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* Compact, high-contrast entry points to scholarship, speaking and judging. */
+.landing-pillars{padding:1.6rem 0 2rem;background:var(--soft2);border-bottom:1px solid var(--line)}
+.landing-pillars .pillar-eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:0 0 .75rem}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.pillar-link{display:flex;flex-direction:column;gap:.4rem;position:relative;background:var(--card);border:1px solid var(--line);padding:1.2rem 1.3rem;border-radius:20px;color:var(--text);text-decoration:none;box-shadow:var(--shadow);min-height:145px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.pillar-link:hover{transform:translateY(-4px);border-color:var(--brand);text-decoration:none;box-shadow:0 18px 44px rgba(0,0,0,.15)}
+.pillar-link .pillar-num{font-size:.73rem;font-weight:800;letter-spacing:.1em;color:var(--brand)}
+.pillar-link strong{font-size:1.27rem;line-height:1.2}
+.pillar-link .pillar-desc{font-size:.94rem;color:var(--muted);line-height:1.45}
+.pillar-link .pillar-arrow{position:absolute;top:1.1rem;right:1.25rem;color:var(--brand);font-size:1.2rem}
+@media(max-width:730px){.pillar-grid{grid-template-columns:1fr}.pillar-link{min-height:auto}.landing-pillars{padding:1.4rem 0}}
 </style>
-</head>
+<meta content="#091523" id="theme-color" name="theme-color"/><meta content="Sachin Gupta | Enterprise AI &amp; Digital Operating Model Transformation" property="og:title"/><meta content="Scholar · Speaker · Judge | Mission-critical global supply chain resilience" property="og:description"/><meta content="https://sachingupta.net/assets/portrait.png" property="og:image"/></head>
 <body>
-<header><nav class="nav" aria-label="Primary navigation">
-<a class="brand" href="#home"><img src="assets/sachin-gupta-icon.jpg" alt="Sachin Gupta" class="brand-photo"><span>Sachin Gupta</span></a>
-<div class="nav-actions"><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">Light</span></button><button id="menu" aria-label="Menu" aria-expanded="false">☰</button></div>
-<div id="links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#ai">AI</a><a href="#impact">Impact</a><a href="#research">Research</a><a href="#contributions">Contributions</a><a href="#recognition">Recognition</a><a href="#insights">Insights</a><a class="pill" href="#contact">Connect</a></div>
-</nav></header>
-<main>
-<section id="home" class="hero"><div class="wrap hero-grid">
-<div>
-<p class="eyebrow"><span class="section-icon" aria-hidden="true">⌂</span>DIGITAL TRANSFORMATION · ENTERPRISE AI · ARCHITECTURE</p>
-<h1>Building resilient digital operating models for global enterprises.</h1>
-<p class="lead">I am Sachin Gupta, a Digital Transformation Architect with <strong>20+ years of global experience</strong> leading enterprise-wide transformation, ERP modernization, enterprise architecture, AI/ML initiatives and technology-enabled supply-chain transformation.</p>
-<div class="executive-summary">
-<small><span class="sub-icon" aria-hidden="true">◈</span> EXECUTIVE SUMMARY</small>
-<p>My work connects business strategy, operating models, architecture, platforms, data and delivery to modernize mission-critical enterprises while maintaining business continuity. I focus on practical enterprise AI, legacy-to-modern transformation, resilient digital operations and measurable business outcomes.</p>
+<header>
+<div class="wrap nav"><a class="brand" href="#top"><img alt="Sachin Gupta portrait icon" src="assets/portrait.png"/><span>Sachin Gupta</span></a>
+<div class="nav-right"><nav aria-label="Main navigation" class="links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#scholar">Scholar</a><a href="#speaking">Speaking</a><a href="#service">Judging</a><a href="#media">Media</a><a href="#recognition">Recognition</a><a href="#contact">Connect</a></nav><button aria-label="Switch to light mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><span aria-hidden="true" class="theme-icon">☀</span><span class="theme-label">Light mode</span></button><button aria-expanded="false" aria-label="Toggle navigation" class="mobile-menu" id="mobile-menu" type="button">☰</button></div></div>
+</header>
+<main id="top">
+<section class="hero">
+<div class="wrap hero-grid"><div class="hero-copy reveal"><span class="eyebrow">SCHOLAR · SPEAKER · JUDGE · ADVISOR</span>
+<h1>Enterprise AI &amp; Digital Operating Model Transformation for <em>Mission-Critical Global Supply Chain Resilience.</em></h1>
+<p class="lead">Sachin Gupta is an enterprise technology leader, independent researcher, IEEE Senior Member, and contributor to professional and academic communities. With 20+ years of global experience, his expertise connects enterprise AI, ERP modernization, architecture, and digital operating models to business continuity and resilient supply chains.</p>
+<div class="hero-line">Turning enterprise AI into practical business outcomes.</div>
+<div class="cta-row"><a class="btn primary" href="#scholar">Explore scholarship</a><a class="btn" href="#speaking">Speaking highlights</a><a class="btn" href="mailto:connect@sachingupta.net?subject=Professional%20Inquiry">Get in touch</a></div>
+<div class="hero-kickers"><div><strong>20+ years</strong><span>Global enterprise leadership</span></div><div><strong>IEEE Senior Member</strong><span>Engineering and technology</span></div><div><strong>Scholar · Speaker · Judge</strong><span>Research, dialogue and peer review</span></div></div></div>
+<div class="hero-card float-card"><img alt="Professional portrait of Sachin Gupta" src="assets/portrait.png"/><div class="hero-photo-caption">Independent Researcher · Enterprise Technology Leader</div></div></div>
+</section>
+<section class="landing-pillars" aria-label="Professional focus areas">
+<div class="wrap">
+<p class="pillar-eyebrow">Research · Industry dialogue · Independent evaluation</p>
+<div class="pillar-grid">
+<a class="pillar-link reveal" href="#scholar"><span class="pillar-num">01 · RESEARCH</span><span class="pillar-arrow" aria-hidden="true">↗</span><strong>Scholar</strong><span class="pillar-desc">Research and frameworks for resilient enterprise transformation, AI governance and digital operating models.</span></a>
+<a class="pillar-link reveal" href="#speaking"><span class="pillar-num">02 · CONFERENCES</span><span class="pillar-arrow" aria-hidden="true">↗</span><strong>Speaker</strong><span class="pillar-desc">Featured speaking, panel discussions and industry sessions on AI-enabled global supply chains.</span></a>
+<a class="pillar-link reveal" href="#service"><span class="pillar-num">03 · PEER EVALUATION</span><span class="pillar-arrow" aria-hidden="true">↗</span><strong>Judge</strong><span class="pillar-desc">Technical paper reviews, independent judging and professional service across AI and technology.</span></a>
 </div>
-<div class="actions"><a class="btn primary" href="#expertise">Explore expertise</a><a class="btn" href="#ai">AI opportunities</a><a class="btn" href="#research">Research & publications</a></div>
-<div class="stats"><div><strong>20+</strong><span>Years of global experience</span></div><div><strong>Global</strong><span>Multi-region transformation</span></div><div><strong>AI + Enterprise</strong><span>Business-focused adoption</span></div></div>
 </div>
-<div class="hero-card">
-<img src="assets/sachin-gupta.jpg" alt="Sachin Gupta professional portrait" class="hero-photo">
+</section>
+<section class="section" id="about">
+<div class="wrap">
+<p class="eyebrow">Professional Overview</p>
+<h2>Where enterprise AI meets operating-model discipline.</h2>
+<p class="intro">Sachin Gupta focuses on enterprise AI and digital operating model transformation for mission-critical global supply chains. His approach connects strategy, business process, architecture, data, governance, delivery, and human oversight so organizations can modernize without interrupting critical operations.</p>
+<div class="grid-4">
+<div class="card"><h3>Enterprise Architecture</h3><p class="muted">Business, application, data, and technology architecture aligned to strategic outcomes and operating-model evolution.</p></div>
+<div class="card"><h3>ERP Modernization</h3><p class="muted">Legacy-to-modern ERP transformation, coexistence architecture, cutover design, and business continuity.</p></div>
+<div class="card"><h3>Enterprise AI</h3><p class="muted">Responsible AI adoption, governance, intelligent workflows, decision support, and agentic enterprise use cases.</p></div>
+<div class="card"><h3>Supply-Chain Resilience</h3><p class="muted">Technology-enabled resilience across planning, order management, fulfillment, visibility, and orchestration.</p></div>
 </div>
+<div class="metric-grid">
+<div class="metric"><b>Global</b><span>Multi-region transformation exposure</span></div>
+<div class="metric"><b>Research</b><span>Conference papers, reviews, and practitioner thought leadership</span></div>
+<div class="metric"><b>Advisory</b><span>University and professional community engagement</span></div>
+<div class="metric"><b>Community</b><span>IEEE and student-facing volunteer service</span></div>
+</div>
+</div>
+</section><section class="section alt" id="expertise"><div class="wrap"><p class="eyebrow">CORE EXPERTISE</p><h2>Enterprise AI &amp; Digital Operating Model Transformation</h2><p class="intro">A practical, end-to-end perspective on mission-critical global supply chain resilience, from operating-model choices to trustworthy enterprise AI deployment.</p>
+<div class="grid-3">
+<article class="card reveal"><span class="card-no">01</span><h3>Enterprise AI Operating Models</h3><p>Business-value prioritization, accountable human-AI workflows, enterprise adoption, responsible AI governance, and measurable outcomes.</p></article>
+<article class="card reveal"><span class="card-no">02</span><h3>ERP Coexistence &amp; Modernization</h3><p>Phased global transformations, process and master-data alignment, legacy-to-modern coexistence, interface governance, cutover, and resilience.</p></article>
+<article class="card reveal"><span class="card-no">03</span><h3>AI-Enabled Supply Chain Resilience</h3><p>Connecting demand and supply signals, planning, inventory, customer commitments, fulfillment, and exception-led decision support.</p></article>
+<article class="card reveal"><span class="card-no">04</span><h3>Enterprise Architecture</h3><p>Business capabilities, application and data architecture, integration patterns, security, and scalable operating structures.</p></article>
+<article class="card reveal"><span class="card-no">05</span><h3>Responsible &amp; Agentic AI</h3><p>AI action boundaries, least privilege, separation of duties, audit trails, policy enforcement, approvals, and rollback controls.</p></article>
+<article class="card reveal"><span class="card-no">06</span><h3>Global Transformation Delivery</h3><p>Multi-region execution, program governance, transition planning, operational risk controls, adoption, and knowledge transfer.</p></article>
+</div></div></section><section class="section" id="ai"><div class="wrap"><p class="eyebrow">ENTERPRISE AI IN PRACTICE</p><h2>Turning enterprise AI into practical business outcomes.</h2><p class="intro">AI creates value when it improves a decision, transaction, or business capability, not simply when it generates another proof of concept.</p><div class="grid-3"><article class="card reveal"><h3>Find the decision bottleneck</h3><p>Identify the operational decisions where latency, fragmented data, or manual effort limit resilience.</p></article><article class="card reveal"><h3>Design the control model</h3><p>Define where AI can recommend, act within policy, or require named human approval and traceability.</p></article><article class="card reveal"><h3>Measure business impact</h3><p>Track exception resolution, service levels, cycle time, control effectiveness, and sustained adoption.</p></article></div><div class="callout" style="margin-top:1.2rem"><strong>Operating principle:</strong> Mission-critical systems require a strong relationship between AI-driven insight, governed action, and business continuity.</div></div></section><section class="section alt" id="scholar"><div class="wrap"><p class="eyebrow">SCHOLARSHIP &amp; RESEARCH</p><h2>Developing a body of work around resilient enterprise transformation and AI.</h2><p class="intro">Sachin Gupta’s independent research interests focus on the architecture, governance, and practical deployment of enterprise AI, particularly where complex systems must evolve without interrupting business-critical operations.</p>
+<div class="grid-3">
+<article class="card reveal"><span class="tag">Research in development</span><h3>ERP Coexistence in Global Supply Chains</h3><p>A scalable enterprise coexistence framework for legacy-to-modern ERP transformation, including process, data, integration, control, and continuity.</p></article>
+<article class="card reveal"><span class="tag">Research focus</span><h3>AI-Enabled Digital Operating Models</h3><p>Practical architectures linking intelligent decision support, agentic AI, business execution, and enterprise governance.</p></article>
+<article class="card reveal"><span class="tag">IEEE IEMCON 2026 · Accepted</span><h3>Criticality-Aware Edge-Cloud Orchestration</h3><p>Accepted conference paper exploring resilient multimodal disaster triage through criticality-aware edge-cloud orchestration under degraded connectivity.</p></article>
+</div>
+<div class="research-foot"><a href="https://orcid.org/0009-0007-2359-5464" rel="noopener noreferrer" target="_blank">ORCID research profile ↗</a><a href="mailto:connect@sachingupta.net?subject=Research%20Collaboration">Discuss research collaboration ↗</a></div>
 </div></section>
-
-<section id="about" class="section"><div class="wrap two"><div><p class="eyebrow"><span class="section-icon" aria-hidden="true">◎</span>ABOUT</p><h2>Technology transformation with an operating-model mindset.</h2></div><div class="prose">
-<p>I work at the intersection of enterprise strategy, architecture, business operations and technology delivery. My experience spans global ERP transformation, application modernization, enterprise architecture, supply-chain digitization and complex legacy-to-modern platform transitions.</p>
-<p>My focus is solving transformation problems between technology and business continuity: fragmented platforms, regional variation, critical capabilities, data and integration dependencies, and the need to modernize while the enterprise keeps operating.</p>
-<p>I am increasingly focused on <strong>AI/ML for enterprise operations</strong> identifying practical opportunities where AI can improve decisions, automate repeatable work, accelerate response times and strengthen operational intelligence while maintaining governance and human oversight.</p>
-</div></div></section>
-
-<section id="expertise" class="section alt"><div class="wrap"><p class="eyebrow"><span class="section-icon" aria-hidden="true">◇</span>EXPERTISE</p><h2>Where I create value</h2><div class="cards">
-<article><i class="card-icon"><span aria-hidden="true">◈</span>01</i><h3>Enterprise Digital Transformation</h3><a class="card-link" href="mailto:connect@sachingupta.net?subject=Enterprise%20Digital%20Transformation">Discuss transformation expertise ↗</a><p>Transformation strategy, operating models, governance, roadmaps and execution for complex global enterprises.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">◇</span>02</i><h3>Enterprise Architecture</h3><a class="card-link" href="mailto:connect@sachingupta.net?subject=Enterprise%20Architecture">Discuss architecture expertise ↗</a><p>Business, application, data and technology architecture aligned to enterprise capabilities and strategic outcomes.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">✦</span>03</i><h3>AI/ML for Enterprise Operations</h3><a class="card-link" href="mailto:connect@sachingupta.net?subject=AI%2FML%20for%20Enterprise%20Operations">Discuss AI/ML expertise ↗</a><p>Practical AI/ML opportunities for decision intelligence, workflow automation, customer response, analytics and operational productivity.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">▣</span>04</i><h3>ERP Modernization</h3><a class="card-link" href="mailto:connect@sachingupta.net?subject=ERP%20Modernization">Discuss ERP modernization ↗</a><p>Legacy-to-modern ERP transformation, coexistence architecture, integration, cutover strategy and business continuity.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">↗</span>05</i><h3>Supply-Chain Resilience</h3><a class="card-link" href="mailto:connect@sachingupta.net?subject=Supply-Chain%20Resilience">Discuss supply-chain resilience ↗</a><p>Digital capabilities supporting inventory, order management, planning, fulfillment, visibility and resilience.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">◍</span>06</i><h3>Legacy Modernization</h3><a class="card-link" href="mailto:connect@sachingupta.net?subject=Legacy%20Modernization">Discuss legacy modernization ↗</a><p>Modernizing fragmented technology estates while preserving critical regional, brand and operational capabilities.</p></article>
-</div></div></section>
-
-<section id="ai" class="section ai-section"><div class="wrap"><p class="eyebrow"><span class="section-icon" aria-hidden="true">✦</span>AI / ML · OPPORTUNITIES</p><h2>Turning enterprise AI into practical business outcomes.</h2><p class="lead narrow">I am interested in opportunities where enterprise AI intersects with real operating problems not AI for its own sake.</p><div class="ai-grid">
-<article><span class="ai-number">01</span><h3>AI Advisory & Strategy</h3><p>Identifying high-value AI opportunities, operating models, governance, architecture and responsible enterprise adoption.</p><a href="mailto:connect@sachingupta.net?subject=AI%20Advisory%20Opportunity">Discuss an opportunity ↗</a></article>
-<article><span class="ai-number">02</span><h3>AI Research, Judging & Thought Leadership</h3><p>Open to research collaboration, peer review, judging, speaking, panels, interviews and practitioner thought leadership in applied enterprise AI.</p><a href="mailto:connect@sachingupta.net?subject=AI%20Research%20Judging%20or%20Thought%20Leadership">Invite me to contribute ↗</a></article>
-<article><span class="ai-number">03</span><h3>Enterprise AI Use Cases</h3><p>Applying AI/ML to decision intelligence, automation, data-driven operations, enterprise workflows and supply-chain resilience.</p><a href="mailto:connect@sachingupta.net?subject=Enterprise%20AI%20Use%20Case">Discuss a use case ↗</a></article>
-</div><div class="ai-note"><strong>What I bring:</strong> enterprise architecture, ERP transformation, business-process understanding, governance and a practical approach to translating AI capabilities into measurable business problems and outcomes.</div></div></section>
-
-<section id="impact" class="section"><div class="wrap"><p class="eyebrow"><span class="section-icon" aria-hidden="true">↗</span>SELECTED IMPACT</p><h2>Transformation at enterprise scale</h2><div class="impact">
-<div class="feature"><small><span class="sub-icon" aria-hidden="true">◈</span>TRANSFORMATION PRINCIPLE</small><h3>Modernize the technology landscape without interrupting the enterprise.</h3><p>A key area of my work is designing scalable coexistence approaches where regional legacy environments transition toward a modern ERP ecosystem while business entities already operating on the modern platform continue to run.</p></div>
-<div class="list"><div><b>Multi-region architecture</b><span>Patterns accommodating regional and brand-specific requirements.</span></div><div><b>Business continuity</b><span>Protecting critical operations during complex platform transitions.</span></div><div><b>Enterprise integration</b><span>Connecting applications, data, processes and capabilities across heterogeneous estates.</span></div><div><b>AI decision intelligence</b><span>Exploring AI/ML where it can improve enterprise decisions, workflows and operational responsiveness.</span></div></div>
-</div><p class="note">Selected examples are intentionally high-level to respect employer confidentiality and intellectual property.</p></div></section>
-
-<section id="research" class="section alt"><div class="wrap"><p class="eyebrow">RESEARCH & PUBLICATIONS</p><h2>Developing a body of work around resilient enterprise transformation and AI.</h2><div class="research">
-<article class="featured"><small><span class="sub-icon" aria-hidden="true">◫</span>RESEARCH IN DEVELOPMENT</small><h3>A Scalable Enterprise Coexistence Framework for Legacy-to-Modern ERP Transformation in Global Supply Chains</h3><p>A framework-oriented study of how enterprises can manage legacy and modern ERP environments during multi-region transformation while protecting business continuity, regional capabilities and supply-chain resilience.</p><div class="tags"><span>ERP</span><span>Architecture</span><span>Supply Chain</span></div></article>
-<article><small><span class="sub-icon" aria-hidden="true">✦</span>AI / RESEARCH</small><h3>AI-Enabled Enterprise Operating Models for Supply-Chain Resilience</h3><p>Exploring how AI/ML can move from isolated use cases toward repeatable enterprise decision-intelligence capabilities.</p></article>
-<article><small><span class="sub-icon" aria-hidden="true">○</span>PLANNED</small><h3>Enterprise Digital Operating Models for Multi-Region ERP Transformation</h3><p>Governance, architecture, operating-model design and transformation sequencing in complex enterprises.</p></article>
-<article class="featured"><small><span class="sub-icon" aria-hidden="true">✦</span> IEEE IEMCON 2026 · ACCEPTED</small><h3>Criticality-Aware Edge-Cloud Orchestration for Multimodal Disaster Triage Under Degraded Connectivity</h3><p>Accepted article addressing edge-cloud orchestration and resilient multimodal disaster triage under constrained connectivity.</p><div class="tags"><span>Edge-Cloud</span><span>AI</span><span>Disaster Triage</span></div></article>
-</div><div class="research-links"><a href="https://orcid.org/0009-0007-2359-5464" target="_blank" rel="noopener">ORCID ↗</a><span>Research identity and publication record</span></div><div class="callout"><b><span class="sub-icon dark" aria-hidden="true">✎</span> Publication philosophy</b><p>Research should be useful to practitioners and scholars: grounded in real transformation challenges, structured as reusable frameworks and supported by evidence wherever confidentiality permits.</p></div></div></section>
-
-<section id="contributions" class="section"><div class="wrap"><p class="eyebrow"><span class="section-icon" aria-hidden="true">◌</span>PROFESSIONAL CONTRIBUTIONS</p><h2>Memberships, judging and professional engagement</h2><div class="timeline">
-<div><b><span class="sub-icon" aria-hidden="true">▣</span> IEEE Senior Member</b><p>Professional engagement across engineering, technology, digital transformation and related communities.</p></div>
-<div><b><span class="sub-icon" aria-hidden="true">◇</span> Association of Enterprise Architects (AEA)</b><p>Professional engagement in enterprise architecture, digital transformation and architecture practice.</p></div>
-<div><b><span class="sub-icon" aria-hidden="true">★</span> NASA International Space Apps Challenge 2026 · Los Angeles Judge</b><p>Serving as a judge for the 2026 Los Angeles event, evaluating participant solutions developed using NASA and partner open data to address real-world challenges.</p></div>
-<div><b><span class="sub-icon" aria-hidden="true">⌂</span> University Advisory Engagement</b><p>Contributing industry perspective to academic and emerging-technology discussions.</p></div>
-</div></div></section>
-
-<section id="recognition" class="section"><div class="wrap"><p class="eyebrow"><span class="section-icon" aria-hidden="true">★</span>RECOGNITION & DEVELOPMENT</p><h2>Recognition, awards and professional development</h2><div class="cards three">
-<article><i class="card-icon"><span aria-hidden="true">★</span>01</i><h3>Delivery Excellence Triumph Award · 2013</h3><p>Mahindra Bristlecone recognition for delivery excellence.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">✦</span>02</i><h3>Kaizen Process Optimization Winner</h3><p>Recognition for process optimization and continuous improvement.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">↗</span>03</i><h3>Successful EMEA Rollout Leader</h3><p>Recognition for successful regional rollout leadership.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">◈</span>04</i><h3>Techno-Management Events Facilitator</h3><p>Recognition for facilitating technology and management-focused events.</p></article>
+<section class="section alt" id="speaking">
+<div class="wrap">
+<p class="eyebrow">Speaking &amp; Panels</p>
+<h2>Conference speaking, panels, and upcoming industry sessions.</h2>
+<p class="intro">A blend of practitioner experience and independent research shapes Sachin Gupta’s presentations on enterprise AI, resilient digital operating models, and supply-chain orchestration.</p>
+<div class="timeline">
+<div class="event">
+<div class="date">Oct 21–22, 2026</div>
+<div>
+<h3>AAPSCM Global Summit 2026: Featured Speaker</h3>
+<p><strong>Session:</strong> <em>AI-Enabled Supply Chain Resilience: From ERP Systems of Record to Intelligent Demand-Supply Orchestration</em>. The session addressed how enterprises move from transaction-centric ERP systems toward more intelligent, connected orchestration across demand, supply, and decision-making.</p>
+<p class="small"><strong>Additional full-session video:</strong> <a href="https://www.youtube.com/watch?v=hP2Co12ObbU&amp;t=14680s" rel="noopener noreferrer" target="_blank">Watch from 04:04:40</a></p>
+<div class="cta-row">
+<a class="btn primary" href="https://www.youtube.com/watch?v=hP2Co12ObbU&amp;t=14680s" rel="noopener" target="_blank">Watch AAPSCM featured talk ↗</a>
+<a class="btn" href="https://aapscm-conferences.org/" rel="noopener" target="_blank">AAPSCM conference site</a>
 </div>
-<div class="two recognition-lower">
-<div><p class="eyebrow"><span class="sub-icon" aria-hidden="true">▣</span>CERTIFICATIONS & DEVELOPMENT</p>
-<div class="list"><div><b>Executive Leadership Development Program · 2023</b><span>Executive leadership development.</span></div><div><b>Machine Learning · 2022</b><span>Machine learning professional development.</span></div><div><b>Scrum Agile Methodology · 2021</b><span>Agile delivery and Scrum methodology.</span></div></div></div>
-<div><p class="eyebrow"><span class="sub-icon" aria-hidden="true">◇</span>MEMBERSHIPS</p>
-<div class="list"><div><b>IEEE Senior Member</b><span>Professional engineering and technology community.</span></div><div><b>Association of Enterprise Architects (AEA)</b><span>Enterprise architecture professional community.</span></div></div></div>
-</div></div></section>
-
-<section id="insights" class="section alt"><div class="wrap"><p class="eyebrow"><span class="section-icon" aria-hidden="true">◉</span>INSIGHTS</p><h2>Ideas I am exploring</h2><div class="cards three">
-<article><i class="card-icon"><span aria-hidden="true">◈</span>01</i><h3>AI value begins with the enterprise problem.</h3><p>Effective AI adoption starts by identifying high-value decisions and workflows, then selecting the right technology and governance.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">◇</span>02</i><h3>ERP modernization is an operating-model transformation.</h3><p>The platform changes, but sustainable transformation depends on capabilities, governance, data, integration and adoption.</p></article>
-<article><i class="card-icon"><span aria-hidden="true">✦</span>03</i><h3>Responsible AI must be designed into operations.</h3><p>Data quality, human oversight, security, accountability and measurable outcomes should be considered before AI becomes mission-critical.</p></article>
-</div></div></section>
-
-<section id="contact" class="section contact"><div class="wrap contact-grid"><div><p class="eyebrow"><span class="section-icon" aria-hidden="true">✉</span>CONNECT</p><h2>Interested in enterprise transformation, AI or resilient digital operations?</h2><p class="lead">I am open to professional conversations, AI opportunities, research collaboration, industry events, peer review, judging, mentoring, advisory work and thought-leadership opportunities aligned with my expertise.</p></div><div class="contact-card"><a href="mailto:connect@sachingupta.net">connect@sachingupta.net</a><a href="https://www.linkedin.com/in/sachinguptaerp/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://orcid.org/0009-0007-2359-5464" target="_blank" rel="noopener">ORCID ↗</a><small>Professional inquiries and collaboration opportunities are welcome.</small></div></div></section>
+</div>
+</div>
+<div class="event">
+<div class="date">Oct 21–22, 2026</div>
+<div>
+<h3>AAPSCM Global Summit 2026: Panel Discussion</h3>
+<p>Sachin Gupta also appeared as a panel participant, contributing perspectives on enterprise AI, digital operating models, and transformation realities in procurement and supply-chain environments.</p>
+<p class="small"><strong>Selected speaking highlights:</strong> <a href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=9753s" rel="noopener noreferrer" target="_blank">2:42:33</a> · <a href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=10352s" rel="noopener noreferrer" target="_blank">2:52:32</a> · <a href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=11030s" rel="noopener noreferrer" target="_blank">3:03:50</a></p>
+</div>
+</div>
+</div><div class="gallery">
+<figure class="figure">
+<button aria-label="Open AAPSCM speaking photo" data-full="assets/aapscm-speaking.jpg" type="button"><img alt="Sachin Gupta speaking at AAPSCM" loading="lazy" src="assets/aapscm-speaking.jpg"/></button>
+<figcaption class="caption"><b>AAPSCM speaking session</b><span class="muted">Featured presentation on AI-enabled supply-chain resilience.</span></figcaption>
+</figure>
+<figure class="figure">
+<button aria-label="Open AAPSCM panel photo" data-full="assets/aapscm-panel.jpg" type="button"><img alt="Sachin Gupta on AAPSCM panel" loading="lazy" src="assets/aapscm-panel.jpg"/></button>
+<figcaption class="caption"><b>AAPSCM panel discussion</b><span class="muted">Panel participation with leaders across procurement and supply chain.</span></figcaption>
+</figure>
+<figure class="figure">
+<button aria-label="Open AAPSCM stage photo" data-full="assets/aapscm-stage.jpg" type="button"><img alt="Sachin Gupta on the AAPSCM stage" loading="lazy" src="assets/aapscm-stage.jpg"/></button>
+<figcaption class="caption"><b>Stage view</b><span class="muted">Conference stage with session visuals and audience context.</span></figcaption>
+</figure>
+</div><div class="video-feature reveal"><div><span class="tag">Featured speaking video</span><h3>AI-Enabled Supply Chain Resilience</h3><p>Presentation highlights from the AAPSCM Global Summit 2026, held October 21–22, 2026. Selected timestamps below open the corresponding moments in the panel and discussion coverage.</p><div class="time-links"><a href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=9753s" rel="noopener noreferrer" target="_blank">Watch at 2:42:33 ↗</a><a href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=10352s" rel="noopener noreferrer" target="_blank">Watch at 2:52:32 ↗</a><a href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=11030s" rel="noopener noreferrer" target="_blank">Watch at 3:03:50 ↗</a></div></div><a aria-label="Open featured AAPSCM speaking video" class="video-thumb" href="https://www.youtube.com/watch?v=DKhh336ShgA&amp;t=9753s" rel="noopener noreferrer" target="_blank"><img alt="Conference stage at AAPSCM" loading="lazy" src="assets/aapscm-stage.jpg"/><span aria-hidden="true" class="play">▶</span></a></div><div class="timeline ascm-upcoming"><div class="event">
+<div class="date">Apr 7, 2027</div>
+<div>
+<h3>Upcoming Speaker: ASCM Central Jersey Forum (CJER)</h3>
+<p><strong>Planned session:</strong> <em>ERP Coexistence During Transformation: Keeping Global Supply Chains Running</em>. The session will focus on coexistence as a deliberate business and architecture capability during acquisitions, phased rollouts, and global-template programs.</p>
+<a href="https://cjer.ascm.org/" rel="noopener" target="_blank">ASCM Central Jersey Forum ↗</a>
+</div>
+</div></div>
+</div>
+</section>
+<section class="section" id="service">
+<div class="wrap">
+<p class="eyebrow">Judging, Review &amp; Advisory Service</p>
+<h2>Judging, technical paper review, and academic advisory service.</h2>
+<div class="grid-3">
+<div class="card">
+<h3>AAI 2026: Paper Reviewer</h3>
+<p class="muted">Served as a reviewer for the 2026 International Conference on Advances in Artificial Intelligence (AAI), contributing to the paper-evaluation process.</p>
+</div>
+<div class="card">
+<h3>AIEI 2027: Paper Reviewer</h3>
+<p class="muted">Served in paper review for the IEEE International Conference on AI Engineering and Innovation (AIEI 2027), supporting technical evaluation and scholarly quality assessment.</p>
+</div>
+<div class="card">
+<h3>Business Intelligence Group: Judge Profile</h3>
+<p class="muted">Public judging profile highlighting participation in the Business Intelligence Group ecosystem.</p>
+<a href="https://judges.bintelligence.com/sachin-gupta" rel="noopener" target="_blank">View judge profile ↗</a>
+</div>
+<div class="card">
+<h3>UCCS Strategic AI Program: Advisory Board Member</h3>
+<p class="muted">Advisory Board Member supporting the University of Colorado Colorado Springs Strategic AI program with industry perspective and guidance.</p>
+<a href="https://badgefol.io/advisor/sachin-gupta-82157064" rel="noopener" target="_blank">View advisory badge ↗</a>
+</div>
+<div class="card">
+<h3>IEEE &amp; Professional Community Engagement</h3>
+<p class="muted">Professional contributions include IEEE service, enterprise architecture engagement, conference participation, and practitioner knowledge-sharing.</p>
+</div>
+<div class="card">
+<h3>Association of Enterprise Architects</h3>
+<p class="muted">Active professional membership reflecting sustained engagement with architecture practice and enterprise transformation.</p>
+</div>
+</div>
+<div class="badge-strip">
+<div class="badge"><strong>IEEE Senior Member</strong><span>Recognized by IEEE for extensive experience and documented achievements of significance.</span></div>
+<div class="badge"><strong>AEA Member</strong><span>Association of Enterprise Architects membership valid through August 23, 2028.</span></div>
+<div class="badge"><strong>Conference Reviewer</strong><span>AAI 2026 and AIEI 2027 scholarly review contribution.</span></div>
+<div class="badge"><strong>Advisory Board Member</strong><span>University of Colorado Colorado Springs Strategic AI program.</span></div>
+</div>
+</div>
+</section>
+<section class="section alt" id="media">
+<div class="wrap kudos">
+<div>
+<p class="eyebrow">Media, Mentions &amp; Podcast Presence</p>
+<h2>Independent media commentary and technology leadership conversations.</h2>
+<div class="card">
+<div class="media-item">
+<div>
+<h3>CXM World</h3>
+<p class="muted">Quoted / featured in customer-experience and AI transformation coverage, including discussion around vendor lock-in and composable CX strategy.</p>
+</div>
+<a href="https://cxm.world/customer-experience/ai-vendor-lock-in-composable-cx-stack/" rel="noopener" target="_blank">Read ↗</a>
+</div>
+<div class="media-item">
+<div>
+<h3>CIO.com</h3>
+<p class="muted">Contributor commentary in CIO.com’s “In good company: 10 CIOs every CIO should follow,” highlighting responsible AI leadership and business outcomes.</p>
+</div>
+<a href="https://www.cio.com/article/4239172/in-good-company-10-cios-every-cio-should-follow.html" rel="noopener" target="_blank">Read ↗</a>
+</div>
+<div class="media-item">
+<div>
+<h3>The Digital Executive: Coruzant</h3>
+<p class="muted">Podcast engagement with The Digital Executive, focused on conversations with technology leaders. A specific episode link can be added when the published episode is available.</p>
+</div>
+<a href="https://coruzant.com/podcasts-the-digital-executive/" rel="noopener" target="_blank">The Digital Executive ↗</a>
+</div>
+</div>
+</div>
+<div>
+<div class="callout">
+<h3>Profile positioning</h3>
+<p class="muted">This portfolio emphasizes externally visible contributions: speaking, panel participation, advisory activity, professional recognition, conference paper review, media mentions, and community engagement.</p>
+<div class="logo-line">
+<span class="pill">IEEE</span>
+<span class="pill">AAPSCM</span>
+<span class="pill">ASCM</span>
+<span class="pill">UCCS</span>
+<span class="pill">CIO.com</span>
+<span class="pill">CXM World</span>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section" id="podcast"><div class="wrap"><p class="eyebrow">PODCAST &amp; EXECUTIVE CONVERSATIONS</p><h2>The Digital Executive (Coruzant)</h2><div class="podcast-grid"><div class="podcast-emblem"><span class="podcast-mark">🎙</span><strong>The Digital Executive</strong><span>Coruzant Technologies</span></div><div><p>The Digital Executive features conversations with technology leaders about enterprise transformation, AI, innovation, and the practical decisions that shape modern organizations.</p><p>Engagement with the podcast is part of Sachin Gupta’s broader professional dialogue about responsible enterprise AI, architecture, and measurable business outcomes. A direct episode link will be added upon confirmation of publication.</p><a class="btn outline" href="https://coruzant.com/podcasts-the-digital-executive/" rel="noopener noreferrer" target="_blank">Explore The Digital Executive ↗</a></div></div></div></section><section class="section alt" id="recognition"><div class="wrap"><p class="eyebrow">RECOGNITION &amp; PROFESSIONAL DEVELOPMENT</p><h2>Recognition, awards and professional development.</h2><div class="grid-4"><article class="card reveal"><h3>Delivery Excellence Triumph Award · 2013</h3><p>Recognition at Mahindra Bristlecone for delivery excellence.</p></article><article class="card reveal"><h3>Kaizen Process Optimization Winner</h3><p>Recognition for process optimization and continuous improvement.</p></article><article class="card reveal"><h3>Successful EMEA Rollout Leader</h3><p>Recognition related to regional technology rollout leadership.</p></article><article class="card reveal"><h3>Techno-Management Events Facilitator</h3><p>Recognition for technology and management event facilitation.</p></article></div>
+<div class="two-col subgrid"><div class="card"><h3>Professional Development</h3><p>Executive Leadership Development Program (2023), Machine Learning (2022), and Scrum Agile Methodology (2021).</p></div><div class="card"><h3>Professional Memberships</h3><p>IEEE Senior Member and Association of Enterprise Architects (AEA) Individual Member.</p></div></div></div></section><section class="section" id="education"><div class="wrap"><p class="eyebrow">EDUCATION</p><h2>Academic foundation.</h2><div class="two-col"><div class="card reveal"><span class="tag">Postgraduate</span><h3>Master of Business Administration in Advance Information Technology</h3><p>Business and information technology studies supporting technology strategy, leadership, enterprise architecture, and transformation.</p></div><div class="card reveal"><span class="tag">Undergraduate</span><h3>Bachelor of Information Technology</h3><p>Academic foundation in information technology, systems, and computing.</p></div></div></div></section><section class="section alt" id="linkedin"><div class="wrap"><p class="eyebrow">LINKEDIN THOUGHT LEADERSHIP</p><h2>Selected LinkedIn conversations and professional posts.</h2><p class="intro">Posts cover enterprise AI strategy, responsible transformation, IEEE activities, conference speaking, professional service, and practical supply-chain technology. Individual post permalinks can be featured here as they are confirmed.</p>
+<div class="grid-3">
+<article class="card reveal"><span class="tag">Enterprise AI</span><h3>AI &amp; Digital Operating Models</h3><p>Perspectives on making AI accountable, measurable, and operationally useful.</p><a href="https://www.linkedin.com/in/sachinguptaerp/recent-activity/all/" rel="noopener noreferrer" target="_blank">Browse posts ↗</a></article>
+<article class="card reveal"><span class="tag">Conference leadership</span><h3>Speaking &amp; Supply Chain Resilience</h3><p>Conference updates and insights connecting ERP systems of record to intelligent demand-supply orchestration.</p><a href="https://www.linkedin.com/in/sachinguptaerp/recent-activity/all/" rel="noopener noreferrer" target="_blank">Browse posts ↗</a></article>
+<article class="card reveal"><span class="tag">IEEE &amp; community</span><h3>Professional Recognition &amp; Volunteering</h3><p>Highlights from IEEE membership, university outreach, mentoring, and industry contribution.</p><a href="https://www.linkedin.com/in/sachinguptaerp/recent-activity/all/" rel="noopener noreferrer" target="_blank">Browse posts ↗</a></article>
+</div></div></section><section class="section" id="insights"><div class="wrap"><p class="eyebrow">IDEAS &amp; POINT OF VIEW</p><h2>Enterprise transformation takes more than new technology.</h2><div class="grid-3"><article class="card reveal"><h3>AI value begins with the enterprise problem.</h3><p>High-value decisions and workflows come first; appropriate technology and governance follow.</p></article><article class="card reveal"><h3>ERP modernization is an operating-model transformation.</h3><p>Lasting change depends on process, governance, data, integration, adoption, and continuity alongside platform delivery.</p></article><article class="card reveal"><h3>Responsible AI must be designed into operations.</h3><p>Human oversight, least privilege, traceability, evaluation, and security are critical before AI becomes mission-critical.</p></article></div></div></section>
+<section class="section" id="community">
+<div class="wrap">
+<p class="eyebrow">Community &amp; Volunteering</p>
+<h2>IEEE Boulder Section engagement at the University of Colorado Boulder.</h2>
+<div class="two-col">
+<div class="card">
+<p>Sachin Gupta has also supported IEEE Boulder Section activities at the University of Colorado Boulder, including student-facing and community-oriented engagement. These activities reflect commitment to professional service, STEM outreach, and knowledge-sharing beyond enterprise leadership roles.</p>
+<ul class="list">
+<li>Community interaction with students and families through IEEE Boulder Section activities.</li>
+<li>Support for university and local engagement aligned to engineering, technology, and education.</li>
+<li>Volunteer presence that complements speaking, research, and advisory contributions.</li>
+</ul>
+<p class="notice">The images below are included as event highlights and can be enlarged by clicking.</p>
+</div>
+<div class="image-row">
+<figure class="figure">
+<button aria-label="Open IEEE Boulder activity photo" data-full="assets/ieee-boulder-1.jpg" type="button"><img alt="IEEE Boulder Section volunteering activity" loading="lazy" src="assets/ieee-boulder-1.jpg"/></button>
+<figcaption class="caption"><b>IEEE Boulder Section outreach</b><span class="muted">Community and student engagement at CU Boulder.</span></figcaption>
+</figure>
+<figure class="figure">
+<button aria-label="Open classroom activity photo" data-full="assets/ieee-boulder-2.jpg" type="button"><img alt="University classroom and demonstration setting" loading="lazy" src="assets/ieee-boulder-2.jpg"/></button>
+<figcaption class="caption"><b>University activity setting</b><span class="muted">Academic and technical engagement context.</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt" id="credentials">
+<div class="wrap">
+<p class="eyebrow">Credentials &amp; Evidence</p>
+<h2>Selected membership documents.</h2>
+<div class="gallery">
+<figure class="figure">
+<button aria-label="Open IEEE Senior Member letter" data-full="assets/ieee-senior-letter.png" type="button"><img alt="IEEE Senior Member recognition letter" loading="lazy" src="assets/ieee-senior-letter.png"/></button>
+<figcaption class="caption"><b>IEEE Senior Member recognition</b><span class="muted">Official letter noting elevation to IEEE Senior Member.</span></figcaption>
+</figure>
+<figure class="figure">
+<button aria-label="Open AEA membership card" data-full="assets/aea-membership.png" type="button"><img alt="Association of Enterprise Architects membership" loading="lazy" src="assets/aea-membership.png"/></button>
+<figcaption class="caption"><b>Association of Enterprise Architects</b><span class="muted">Membership credential and active professional affiliation.</span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="wrap two-col">
+<div>
+<p class="eyebrow">Connect</p>
+<h2>Get in touch about research, speaking, judging, advisory work, and enterprise AI.</h2>
+<p class="intro">Sachin Gupta welcomes professional discussion and collaboration opportunities involving enterprise AI and digital operating models, mission-critical global supply chains, architecture, research, technical review, and mentoring.</p>
+</div>
+<div class="card">
+<p><a class="contact-cta" href="mailto:connect@sachingupta.net?subject=Professional%20Inquiry%20for%20Sachin%20Gupta">✉ Email: connect@sachingupta.net ↗</a></p><h3>Professional links</h3>
+<p><a href="https://www.linkedin.com/in/sachinguptaerp/" rel="noopener" target="_blank">LinkedIn ↗</a></p>
+<p><a href="https://orcid.org/0009-0007-2359-5464" rel="noopener" target="_blank">ORCID ↗</a></p>
+<p><a href="https://badgefol.io/advisor/sachin-gupta-82157064" rel="noopener" target="_blank">UCCS advisory badge ↗</a></p>
+<p><a href="mailto:connect@sachingupta.net">connect@sachingupta.net</a></p>
+<p class="small muted">This page is written in third-person profile style for public professional use, conference profiles, and portfolio presentation.</p>
+</div>
+</div>
+</section>
 </main>
-<footer><div class="wrap"><span>© <span id="year"></span> Sachin Gupta</span><span>Enterprise Digital Transformation · AI/ML · Architecture · Resilience</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+<footer>
+<div class="wrap">
+<span>© <span id="year"></span> Sachin Gupta</span>
+<span>Enterprise AI · Digital Transformation · Architecture · Supply-Chain Resilience</span>
+</div>
+</footer>
+<div aria-hidden="true" class="modal" id="modal">
+<div class="modal-box">
+<button aria-label="Close image" class="modal-close" id="modalClose">×</button>
+<img alt="Expanded image" id="modalImg" src=""/>
+</div>
+</div>
+<script>
+const modal=document.getElementById('modal');
+const modalImg=document.getElementById('modalImg');
+document.querySelectorAll('[data-full]').forEach(btn=>{
+  btn.addEventListener('click',()=>{modalImg.src=btn.getAttribute('data-full');modal.classList.add('open');modal.setAttribute('aria-hidden','false');});
+});
+document.getElementById('modalClose').addEventListener('click',()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');modalImg.src='';});
+modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');modalImg.src='';}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');modalImg.src='';}});
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const themeToggle=document.getElementById('theme-toggle');
+const themeIcon=themeToggle.querySelector('.theme-icon');
+const themeText=themeToggle.querySelector('.theme-label');
+function setTheme(light){
+  document.body.classList.toggle('light',light);
+  document.getElementById('theme-color').setAttribute('content',light?'#f8fbff':'#091523');
+  themeToggle.setAttribute('aria-label',light?'Switch to dark mode':'Switch to light mode');
+  themeToggle.setAttribute('aria-pressed',String(light));
+  themeIcon.textContent=light?'☾':'☀';
+  themeText.textContent=light?'Dark mode':'Light mode';
+}
+try{setTheme(localStorage.getItem('sachin-theme')==='light')}catch(e){setTheme(false)}
+themeToggle.addEventListener('click',()=>{const next=!document.body.classList.contains('light');setTheme(next);try{localStorage.setItem('sachin-theme',next?'light':'dark')}catch(e){}});
+const menuToggle=document.getElementById('mobile-menu');
+const navLinks=document.querySelector('.links');
+menuToggle.addEventListener('click',()=>{const active=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(active))});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false')}));
+if('IntersectionObserver' in window){const observer=new IntersectionObserver((items,obs)=>{items.forEach(item=>{if(item.isIntersecting){item.target.classList.add('is-visible');obs.unobserve(item.target)}})},{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'))}
+</script>
+</body>
+</html>

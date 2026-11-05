@@ -1,40 +1,24 @@
-# sachingupta.net
+# Sachin Gupta — Professional Portfolio Website
 
-Final static professional website package for GitHub Pages.
+A complete, static website suitable for GitHub Pages or ordinary web hosting.
 
-## Included
-- Responsive single-page professional website.
-- Original uploaded Sachin Gupta professional photo used in the hero and as the small profile/icon image.
-- Direct LinkedIn link: https://www.linkedin.com/in/sachinguptaerp/
-- ORCID: https://orcid.org/0009-0007-2359-5464
-- AI/ML positioning and an AI Opportunities section covering advisory, peer review/judging, research, speaking, enterprise use cases and education/advisory-board opportunities.
-- `CNAME` configured for `sachingupta.net`.
-- SEO metadata, Open Graph metadata and Person structured data.
+## Quick start
+1. Extract the ZIP.
+2. Keep `index.html` and the `assets/` folder together.
+3. Open `index.html` in a browser, or upload all contents to the root of a GitHub Pages repository.
+4. For an existing GitHub Pages site, back up the old site first and replace the current index/assets with these files.
 
-## Publish to GitHub Pages
-1. Create or use your GitHub repository for the site.
-2. Upload the contents of this package to the repository root.
-3. In GitHub, go to **Settings → Pages** and choose your publishing source.
-4. Set the custom domain to `sachingupta.net` if GitHub has not already detected the included `CNAME` file.
-5. Enable HTTPS when GitHub makes the certificate available.
+## Features
+- Dark theme on first visit, interactive dark/light switch; the chosen preference is retained in browser storage.
+- Responsive layout, subtle image hover effects, animated hero portrait and scroll-based entrance transitions.
+- Reduced-motion preference respected.
+- Portrait favicon and photo lightbox with Escape-to-close.
+- Scholar, Speaker, Judge, Advisor, Media, Podcast, Volunteering, Education and Recognition sections.
+- AAPSCM conference photos and three timestamped speaking links.
 
-GitHub Pages supports apex custom domains such as `sachingupta.net` and recommends configuring `www` as well when appropriate.
-
-## Custom email: connect@sachingupta.net → saching.globaltech@gmail.com
-The website only needs a `mailto:` link; email forwarding is configured at the domain/DNS level, not inside GitHub Pages.
-
-Because the domain is already intended to use Cloudflare DNS, Cloudflare Email Routing is the simplest setup for receiving mail:
-
-1. Sign in to Cloudflare and select `sachingupta.net`.
-2. Go to **Compute → Email Service → Email Routing**.
-3. Onboard the domain if Email Routing is not already enabled.
-4. Add `saching.globaltech@gmail.com` as a destination address and verify it using the email Cloudflare sends.
-5. Create a routing rule for `connect` on `sachingupta.net` and select the verified Gmail address as the destination.
-6. Send a test message to `connect@sachingupta.net` and confirm it arrives in Gmail.
-
-This provides receiving/forwarding. If you also want to **send** email as `connect@sachingupta.net`, you need a mail/SMTP service and its DNS authentication records; forwarding alone does not create a full mailbox or outbound sending service.
-
-## Notes
-- The site does not claim that AI opportunities, judging, speaking or advisory roles have already been awarded. The AI section is intentionally written to make relevant inbound opportunities easy to identify and contact.
-- Employer-confidential project details remain high-level.
-- Replace or add publication links only when they are verified and public.
+## Notes before publishing
+- The 'Selected LinkedIn conversations' cards intentionally link to the user's LinkedIn activity feed. Replace with specific verified post permalinks when available.
+- The Digital Executive section links to the official show page. A specific guest episode has not been linked because no confirmed episode URL was provided.
+- Confirm the final status and wording of all professional achievements, advisory roles, volunteer roles and accepted papers before public posting.
+- The supplied portrait photo and historical credential images are included in assets. Photos are enhanced only mildly in the previously generated package, with no face alterations.
+- This release has static-file and JavaScript syntax checks; browser automation could not navigate to local or localhost URLs in this environment.
